@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFD000;
+  height: 100%;
+}
+
+h1 {
+  margin: 0; /* Ensure no extra margin on h1 */
+  padding: 0;
+}
+
+table {
+  width: 80%;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+}
+
+div {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.button-primary {
+  background-color: #28A3AF;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: #218D95;
+}
+
+.button-delete {
+  background-color: #C9F3F4;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.button-delete:hover {
+  background-color: #A7E6E7;
+}

@@ -1,10 +1,13 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
+  swcMinify: true, // Enable SWC for better performance
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true, // Ignore lint errors during build
   },
-  trailingSlash: false, // Set this to true if you need trailing slashes
 };
+
+module.exports = nextConfig;
+
 
   

@@ -5,9 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "test": "jest"
+    "start": "next start"
   },
   "dependencies": {
     "@azure/msal-browser": "^3.26.1",

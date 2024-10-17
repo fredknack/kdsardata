@@ -1,27 +1,25 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true, // Enable SWC for better performance
+  reactStrictMode: true, // Ensures strict mode for React
 
-  // New additions:
-  output: 'standalone', // This ensures Next.js outputs the necessary files for standalone server use.
-  
+  swcMinify: true, // Enables SWC for faster and more optimized builds
+
   eslint: {
-    ignoreDuringBuilds: true, // Ignore lint errors during build
+    ignoreDuringBuilds: true, // Ignore ESLint errors during builds
   },
 
   typescript: {
-    ignoreBuildErrors: true, // Prevent build failures due to TypeScript errors
+    ignoreBuildErrors: true, // Prevents TypeScript errors from breaking builds
   },
 
   // Optional: Enhance performance for larger apps
   experimental: {
-    scrollRestoration: true, // Improves user experience by preserving scroll position on navigation
+    scrollRestoration: true, // Improves user experience by preserving scroll position during navigation
   },
 
   // Azure-specific environment variable handling
   env: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'https://your-default-api-url.com',
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'https://kdsar-cms.scm.azurewebsites.net', // Replace with your actual API URL
   },
 };
 

@@ -59,6 +59,7 @@ export default function UsersPage() {
                     >
                       Delete
                     </button>
+                    
                   </td>
                 </tr>
               ))}

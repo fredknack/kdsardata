@@ -19,6 +19,7 @@ export default function UsersPage() {
     router.push(`/user-data/${userId}`); // Next.js 13 routing
   };
 
+  
   const handleDeleteUser = async (userId) => {
     try {
       await axios.delete(`https://unityazureconnect.azurewebsites.net/api/deleteUserWithLearnerData/${userId}`);

@@ -53,6 +53,7 @@ export default function UsersPage() {
                     View Activity
                   </td>
                   <td className="border px-2 py-1">
+                    
                     <button 
                       className="button-delete bg-red-500 text-white px-3 py-1 rounded" 
                       onClick={() => handleDeleteUser(user.UserId)}

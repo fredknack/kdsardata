@@ -1,12 +1,12 @@
 // D:\0-EMU-Projects\azure\lxdardata\app\layout.js
 
-import '../styles/globals.css'; // Import Tailwind and other global styles if needed
+import '../styles/globals.css'; 
 
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <head>
-                <title>My Application</title>
+                <title>KDS AR Portal</title>
             </head>
             <body className="bg-white">
                 <div className="min-h-screen bg-white flex items-center justify-center">
